@@ -78,6 +78,36 @@
              android:title="@string/separate_signal_icons_title"
              android:summary="@string/separate_signal_icons_summary"
              android:defaultValue="false" />
+             
+         <org.derpfest.support.preferences.SystemSettingSwitchPreference
+             android:key="VOLUME_TEXTVIEW"
+             android:title="@string/volume_persen_switch_title"
+             android:summary="@string/volume_persen_switch_summary"
+             android:defaultValue="false" />
+
+         <org.derpfest.support.preferences.SystemSettingListPreference
+             android:key="VOLUME_TEXTVIEW_STYLE"                                                   
+             android:title="@string/volume_persen_style_title"
+             android:summary="%s"
+             android:dialogTitle="@string/volume_persen_style_title"
+             android:entries="@array/volume_persen_style_entries"
+             android:dependency="VOLUME_TEXTVIEW"                                                     
+             android:entryValues="@array/volume_persen_style_values"
+             android:defaultValue="0" />
+             
+         <org.derpfest.support.preferences.SystemSettingSeekBarPreference 
+             android:max="50" 
+             android:min="0" 			                                                             
+             android:title="@string/status_bar_left_padding" 
+             android:key="SB_PADDING_LEFT"  
+             android:defaultValue="0" /> 
+
+         <org.derpfest.support.preferences.SystemSettingSeekBarPreference 
+             android:max="50" 
+             android:min="0"                                                 
+             android:title="@string/status_bar_right_padding"  
+             android:key="SB_PADDING_RIGHT" 
+             android:defaultValue="0" />
 
     </PreferenceCategory>
 
